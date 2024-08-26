@@ -19,8 +19,8 @@ display_welcome() {
   echo -e ""
   echo -e "WA THOMZ :"
   echo -e "083834510927"
-  echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@Chiwa"
+  echo -e "Pembuat :"
+  echo -e "@Thomvelz"
   sleep 4
   clear
 }
@@ -79,7 +79,10 @@ install_theme() {
         ;;
     esac
   done
-  
+    
+if [ -e /root/pterodactyl ]; then
+    sudo rm -rf /root/pterodactyl
+    
 if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "                                                       "
   echo -e "${BLUE} =============================================== ${NC}"
@@ -200,7 +203,6 @@ uninstall_theme() {
 
 # Main script
 display_welcome
-install_jq
 check_token
 
 while true; do
