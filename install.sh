@@ -63,8 +63,7 @@ install_theme() {
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       1)
-       echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
-    read LINK_WA
+       
         break
         ;;
       2)
@@ -87,7 +86,7 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
-  0
+  bash <(curl -s https://raw.githubusercontent.com/thomz-store/instal-panel-thomvelz/main/repair.sh)
 
 
   admin
@@ -157,7 +156,6 @@ uninstall_theme() {
 
 # Main script
 display_welcome
-bash <(curl -s https://pterodactyl-installer.se)
 check_token
 
 while true; do
