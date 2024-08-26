@@ -64,6 +64,7 @@ install_theme() {
     case "$INSTAL_THOMZ" in
       1)
         bash <(curl -s https://pterodactyl-installer.se)
+        0
         break
         ;;
       2)
