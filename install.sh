@@ -87,6 +87,7 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
+  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
   bash <(curl -s https://pterodactyl-installer.se)
   0
 
