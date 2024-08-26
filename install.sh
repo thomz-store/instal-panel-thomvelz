@@ -34,7 +34,6 @@ check_token() {
   echo -e "${BLUE}                     SALURAN                     ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                       "
-  TOKEN=$(jq -r '.token' token.json)
 
   echo -e "${YELLOW}TOKEN :${NC}"
   read -r USER_TOKEN
@@ -57,25 +56,21 @@ install_theme() {
     echo -e "${BLUE} =============================================== ${NC}"
     echo -e "                                                       "
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "1. stellar"
-    echo "2. billing"
+    echo "1. panel"
+    echo "2. wings"
     echo "3. enigma"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
-    read -r SELECT_THEME
-    case "$SELECT_THEME" in
+    read -r INSTAL_THOMZ
+    case "$INSTAL_THOMZ" in
       1)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x32\x2E\x7A\x69\x70")
+        bash <(curl -s https://pterodactyl-installer.se)
         break
         ;;
       2)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x31\x2E\x7A\x69\x70")
+        bash <(curl -s https://pterodactyl-installer.se)
         break
         ;;
-      3)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x33\x2E\x7A\x69\x70")
-        break
-        ;; 
       x)
         return
         ;;
@@ -85,13 +80,7 @@ install_theme() {
     esac
   done
   
-if [ -e /root/pterodactyl ]; then
-    sudo rm -rf /root/pterodactyl
-  fi
-  wget -q "$THEME_URL"
-  sudo unzip -o "$(basename "$THEME_URL")"
-  
-if [ "$SELECT_THEME" -eq 1 ]; then
+if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "                                                       "
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
@@ -118,7 +107,7 @@ if [ "$SELECT_THEME" -eq 1 ]; then
   clear
   return
 
-elif [ "$SELECT_THEME" -eq 2 ]; then
+elif [ "$INSTAL_THOMZ" -eq 2 ]; then
   echo -e "                                                       "
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
@@ -146,7 +135,7 @@ elif [ "$SELECT_THEME" -eq 2 ]; then
   clear
   return
 
-elif [ "$SELECT_THEME" -eq 3 ]; then
+elif [ "$INSTAL_THOMZ" -eq 3 ]; then
   echo -e "                                                       "
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
