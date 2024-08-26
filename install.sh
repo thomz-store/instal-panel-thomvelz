@@ -58,7 +58,6 @@ install_theme() {
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
     echo "1. panel"
     echo "2. wings"
-    echo "3. enigma"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r INSTAL_THOMZ
@@ -203,3 +202,34 @@ uninstall_theme() {
 display_welcome
 install_jq
 check_token
+
+while true; do
+  clear
+  echo -e "                                                       "
+  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${BLUE}                   SELECT OPTION                 ${NC}"
+  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "                                                       "
+  echo -e "SELECT OPTION :"
+  echo "1. Install panel"
+  echo "x. Exit"
+  echo -e "Masukkan pilihan (1/x):"
+  read -r MENU_CHOICE
+  clear
+
+  case "$MENU_CHOICE" in
+    1)
+      install_theme
+      ;;
+    2)
+      uninstall_theme
+      ;;
+    x)
+      echo "Keluar dari skrip."
+      exit 0
+      ;;
+    *)
+      echo "Pilihan tidak valid, silahkan coba lagi."
+      ;;
+  esac
+done
