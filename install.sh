@@ -89,18 +89,7 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
-  bash <(curl -s https://pterodactyl-installer.se)
-  0
-  sudo apt install -y nodejs
-  sudo npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/C2.zip
-  sudo rm -rf /root/pterodactyl
-
+  
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
@@ -116,18 +105,7 @@ elif [ "$INSTAL_THOMZ" -eq 2 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                       "
-  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  sudo apt install -y nodejs
-  npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan billing:install stable
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/C1.zip
-  sudo rm -rf /root/pterodactyl
+  
 
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
@@ -145,31 +123,7 @@ elif [ "$INSTAL_THOMZ" -eq 3 ]; then
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
 
-    # Menanyakan informasi kepada pengguna untuk tema Enigma
-    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
-    read Domain
-    echo -e "${YELLOW}Masukkan link group (https://.....) : ${NC}"
-    read LINK_GROUP
-    echo -e "${YELLOW}Masukkan link channel (https://...) : ${NC}"
-    read LINK_CHNL
-
-    # Mengganti placeholder dengan nilai dari pengguna
-    sudo sed -i "s|Domain|$Domain|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-    sudo sed -i "s|LINK_GROUP|$LINK_GROUP|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-    sudo sed -i "s|LINK_CHNL|$LINK_CHNL|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-    
-
-  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  sudo apt install -y nodejs
-  sudo npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/C3.zip
-  sudo rm -rf /root/pterodactyl
+ 
 
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
@@ -191,7 +145,6 @@ uninstall_theme() {
   echo -e "${BLUE}                    DELETE THEME                 ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/Foxstoree/pterodactyl-auto-installer/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                 DELETE THEME SUKSES             ${NC}"
