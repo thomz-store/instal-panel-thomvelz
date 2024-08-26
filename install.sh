@@ -56,15 +56,15 @@ install_theme() {
     echo -e "${BLUE} =============================================== ${NC}"
     echo -e "                                                       "
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "1. panel"
+    echo "0. panel"
     echo "2. wings"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       1)
-        bash <(curl -s https://pterodactyl-installer.se)
-        0
+       echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
+    read LINK_WA
         break
         ;;
       2)
@@ -157,6 +157,7 @@ uninstall_theme() {
 
 # Main script
 display_welcome
+bash <(curl -s https://pterodactyl-installer.se)
 check_token
 
 while true; do
