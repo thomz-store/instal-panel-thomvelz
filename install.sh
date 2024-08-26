@@ -80,8 +80,6 @@ install_theme() {
     esac
   done
     
-if [ -e /root/pterodactyl ]; then
-    sudo rm -rf /root/pterodactyl
     
 if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "                                                       "
