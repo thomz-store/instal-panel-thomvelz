@@ -63,8 +63,7 @@ install_theme() {
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       1)
-        echo -e "${YELLOW}Masukkan Subdo Masing-Masing Contoh (panel.thomvelz.com) : ${NC}"
-    read Domain
+        bash <(curl -s https://pterodactyl-installer.se)
         break
         ;;
       2)
@@ -87,7 +86,6 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
-  bash <(curl -s https://pterodactyl-installer.se)
   0
 
 
