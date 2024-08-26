@@ -87,7 +87,11 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                                   "
-  
+  bash <(curl -s https://pterodactyl-installer.se)
+  0
+
+
+  admin
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
