@@ -154,7 +154,6 @@ uninstall_theme() {
 
 # Main script
 display_welcome
-install_jq
 check_token
 
 while true; do
