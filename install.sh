@@ -203,35 +203,3 @@ uninstall_theme() {
 display_welcome
 install_jq
 check_token
-
-while true; do
-  clear
-  echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                   SELECT OPTION                 ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "                                                       "
-  echo -e "SELECT OPTION :"
-  echo "1. Install theme"
-  echo "2. Uninstall theme"
-  echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/x):"
-  read -r MENU_CHOICE
-  clear
-
-  case "$MENU_CHOICE" in
-    1)
-      install_theme
-      ;;
-    2)
-      uninstall_theme
-      ;;
-    x)
-      echo "Keluar dari skrip."
-      exit 0
-      ;;
-    *)
-      echo "Pilihan tidak valid, silahkan coba lagi."
-      ;;
-  esac
-done
