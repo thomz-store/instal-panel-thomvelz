@@ -3,11 +3,11 @@ if (( $EUID != 0 )); then
     exit
 fi
 repairPanel(){
-    cd /var/www/pterodactyl
+    bash <(curl -s https://pterodactyl-installer.se)
 
-    php artisan down
+    0
 
-    rm -r /var/www/pterodactyl/resources
+    
 
     curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz | tar -xzv
 
