@@ -18,7 +18,7 @@ display_welcome() {
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e ""
   echo -e ""
-  sleep 4
+  sleep 2
 }
 
 #Check user token
