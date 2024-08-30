@@ -71,8 +71,6 @@ bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e ""
   sleep 2
-  clear
-  return
     break
         ;;
       Y) 
@@ -91,8 +89,6 @@ bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e ""
   sleep 2
-  clear
-  return
     break
         ;;
       n)
