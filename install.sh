@@ -48,31 +48,18 @@ check_token() {
 install_theme() {
   while true; do
     echo -e "                                                       "
-    echo -e "${BLUE}[+] =============================================== [+]${NC}"
-    echo -e "${BLUE}[+]                   SELECT THEME                  [+]${NC}"
-    echo -e "${BLUE}[+] =============================================== [+]${NC}"
+    echo -e "${BLUE} =============================================== ${NC}"
+    echo -e "${BLUE}            APAKAH INGIN MELANJUTKAN             ${NC}"
+    echo -e "${BLUE} =============================================== ${NC}"
     echo -e "                                                       "
-    echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "1. stellar"
-    echo "2. billing"
-    echo "3. enigma"
-    echo "x. kembali"
-    echo -e "masukan pilihan (1/2/3/x) :"
-    read -r SELECT_THEME
-    case "$SELECT_THEME" in
-      1)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x32\x2E\x7A\x69\x70")
-        break
+    echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
+    read -r INSTAL_THOMZ
+    case "$INSTAL_THOMZ" in
+      y) Sip Bosku
         ;;
-      2)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x31\x2E\x7A\x69\x70")
-        break
+      Y) Sip Bosku
         ;;
-      3)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x33\x2E\x7A\x69\x70")
-        break
-        ;; 
-      x)
+      n)
         return
         ;;
       *)
