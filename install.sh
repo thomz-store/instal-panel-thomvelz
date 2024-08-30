@@ -55,12 +55,8 @@ install_theme() {
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       y)
-        bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
-        break
         ;;
       Y)
-        bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
-        break
         ;;
       n)
         return
@@ -72,7 +68,26 @@ install_theme() {
   done
     
     
-if [ "$INSTAL_THOMZ" -eq 1 ]; then
+if [ "$INSTAL_THOMZ" -eq y ]; then
+  echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) $Domain true admin@gmail.com admin admin admin admin true
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
+
+if [ "$INSTAL_THOMZ" -eq Y ]; then
   echo -e "                                                       "
   echo -e "${RED} =============================================== ${NC}"
   echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
@@ -149,6 +164,7 @@ uninstall_theme() {
 # Main script
 display_welcome
 check_token
+instal_theme
 
 while true; do
   clear
