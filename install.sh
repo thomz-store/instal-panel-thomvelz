@@ -55,9 +55,11 @@ install_theme() {
     echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
-      y) Sip Bosku
+      y) 
+        Sip Bosku
         ;;
-      Y) Sip Bosku
+      Y) 
+        Sip Bosku
         ;;
       n)
         return
