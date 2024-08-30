@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Color
-BLUE='\033[0;34m'       
+BLUE='\033[0;36m'       
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -17,7 +17,7 @@ display_welcome() {
   echo -e "${BLUE}                                                 ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e ""
-  echo -e "WA THOMZ : AUTO INSTALLER PANEL BY THOMZ"
+  echo -e ""
   sleep 4
 }
 
@@ -31,7 +31,7 @@ check_token() {
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                       "
 
-  echo -e "${YELLOW}TOKEN :${NC}"
+  echo -e "${red}TOKEN :${NC}"
   read -r USER_TOKEN
 
   if [ "$USER_TOKEN" = "thomvelz" ]; then
@@ -162,7 +162,6 @@ uninstall_theme() {
 }
 
 # Main script
-display_welcome
 check_token
 instal_theme
 
