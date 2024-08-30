@@ -54,9 +54,9 @@ install_theme() {
     echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
-      y) Sip Bosku
+      y) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh)
         ;;
-      Y) Sip Bosku
+      Y) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh)
         ;;
       n)
         return
