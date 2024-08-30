@@ -74,23 +74,15 @@ if [ -e /root/pterodactyl ]; then
   wget -q "$THEME_URL"
   sudo unzip -o "$(basename "$THEME_URL")"
   
-if [ "$SELECT_THEME" -eq 1 ]; then
+if [ "$SELECT_THEME" -eq y ]; then
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                                   "
-  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  sudo apt install -y nodejs
-  sudo npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/C2.zip
-  sudo rm -rf /root/pterodactyl
+  read Domain
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) $Domain true admin@gmail.com admin admin admin admin true
+  echo -e "                                                       "
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
