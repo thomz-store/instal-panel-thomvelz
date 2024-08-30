@@ -104,7 +104,7 @@ bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/
   echo -e ""
   sleep 2
   clear
-  bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
+  return
 
 elif [ "$INSTAL_THOMZ" -eq 2 ]; then
   echo -e "                                                       "
