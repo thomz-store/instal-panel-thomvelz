@@ -56,13 +56,43 @@ install_theme() {
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       y) 
-    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
-    read LINK_WA
+     echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) $Domain true admin@gmail.com admin admin admin admin true
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  return
     break
         ;;
       Y) 
-    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
-    read LINK_WA
+     echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) $Domain true admin@gmail.com admin admin admin admin true
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  return
     break
         ;;
       n)
