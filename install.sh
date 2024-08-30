@@ -103,7 +103,7 @@ bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/
         ;;
     esac
   done
-  
+  }
 
 # Main script
 display_welcome
