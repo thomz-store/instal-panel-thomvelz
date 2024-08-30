@@ -18,7 +18,7 @@ display_welcome() {
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e ""
   echo -e ""
-  sleep 2
+  sleep 4
 }
 
 #Check user token
@@ -164,7 +164,6 @@ uninstall_theme() {
 # Main script
 display_welcome
 check_token
-install_theme
 
 while true; do
   clear
