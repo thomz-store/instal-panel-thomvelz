@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Color
-BLUE='\033[0;36m'       
+BLUE='\033[0;34m'       
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -66,8 +66,7 @@ install_theme() {
         ;;
     esac
   done
-    
-    
+  
 if [ "$INSTAL_THOMZ" -eq y ]; then
   echo -e "                                                       "
   echo -e "${RED} =============================================== ${NC}"
@@ -105,37 +104,44 @@ bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/
   sleep 2
   clear
   return
-
-elif [ "$INSTAL_THOMZ" -eq 2 ]; then
-  echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "                                                       "
   
-
+elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "                                                       "
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "${GREEN}                  INSTALL SUCCESS                ${NC}"
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "                                                       "
-  sleep 2
-  clear
-  return
-
-elif [ "$INSTAL_THOMZ" -eq 3 ]; then
-  echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                                   "
 
- 
+    # Menanyakan informasi kepada pengguna untuk tema Enigma
+    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
+    read LINK_WA
+    echo -e "${YELLOW}Masukkan link group (https://.....) : ${NC}"
+    read LINK_GROUP
+    echo -e "${YELLOW}Masukkan link channel (https://...) : ${NC}"
+    read LINK_CHNL
+
+    # Mengganti placeholder dengan nilai dari pengguna
+    sudo sed -i "s|LINK_WA|$LINK_WA|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    sudo sed -i "s|LINK_GROUP|$LINK_GROUP|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    sudo sed -i "s|LINK_CHNL|$LINK_CHNL|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    
+
+  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
+  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  sudo apt install -y nodejs
+  sudo npm i -g yarn
+  cd /var/www/pterodactyl
+  yarn add react-feather
+  php artisan migrate
+  yarn build:production
+  php artisan view:clear
+  sudo rm /root/C3.zip
+  sudo rm -rf /root/pterodactyl
 
   echo -e "                                                       "
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
-  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                   INSTALL SUCCESS               [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e ""
   sleep 5
 else
@@ -148,14 +154,15 @@ fi
 # Uninstall theme
 uninstall_theme() {
   echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                    DELETE THEME                 ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
+  bash <(curl https://raw.githubusercontent.com/Foxstoree/pterodactyl-auto-installer/main/repair.sh)
   echo -e "                                                       "
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "${GREEN}                 DELETE THEME SUKSES             ${NC}"
-  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sleep 2
   clear
