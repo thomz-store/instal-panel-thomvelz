@@ -56,10 +56,14 @@ install_theme() {
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
       y) 
-        Sip Bosku
+    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
+    read LINK_WA
+    break
         ;;
       Y) 
-        Sip Bosku
+    echo -e "${YELLOW}Masukkan link wa (https://wa.me...) : ${NC}"
+    read LINK_WA
+    break
         ;;
       n)
         return
