@@ -31,7 +31,7 @@ check_token() {
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e "                                                       "
 
-  echo -e "${red}TOKEN :${NC}"
+  echo -e "${RED}TOKEN :${NC}"
   read -r USER_TOKEN
 
   if [ "$USER_TOKEN" = "thomvelz" ]; then
