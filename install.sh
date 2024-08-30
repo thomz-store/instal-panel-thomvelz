@@ -54,9 +54,9 @@ install_theme() {
     echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
-      y)
+      y) Sip Bosku
         ;;
-      Y)
+      Y) Sip Bosku
         ;;
       n)
         return
@@ -164,7 +164,7 @@ uninstall_theme() {
 # Main script
 display_welcome
 check_token
-instal_theme
+install_theme
 
 while true; do
   clear
