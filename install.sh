@@ -162,6 +162,7 @@ uninstall_theme() {
 }
 
 # Main script
+display_welcome
 check_token
 instal_theme
 
