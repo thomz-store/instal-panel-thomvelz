@@ -17,12 +17,8 @@ display_welcome() {
   echo -e "${BLUE}                                                 ${NC}"
   echo -e "${BLUE} =============================================== ${NC}"
   echo -e ""
-  echo -e "WA THOMZ :"
-  echo -e "083834510927"
-  echo -e "Pembuat :"
-  echo -e "@Thomvelz"
+  echo -e "WA THOMZ : AUTO INSTALLER PANEL BY THOMZ"
   sleep 4
-  clear
 }
 
 #Check user token
@@ -52,25 +48,21 @@ install_theme() {
   while true; do
     echo -e "                                                       "
     echo -e "${BLUE} =============================================== ${NC}"
-    echo -e "${BLUE}                   SELECT THEME                  ${NC}"
+    echo -e "${BLUE}            APAKAH INGIN MELANJUTKAN             ${NC}"
     echo -e "${BLUE} =============================================== ${NC}"
     echo -e "                                                       "
-    echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "0. panel"
-    echo "2. wings"
-    echo "x. kembali"
-    echo -e "masukan pilihan (1/2/3/x) :"
+    echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
     read -r INSTAL_THOMZ
     case "$INSTAL_THOMZ" in
-      1)
-       
+      y)
+        bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
         break
         ;;
-      2)
-        bash <(curl -s https://pterodactyl-installer.se)
+      Y)
+        bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
         break
         ;;
-      x)
+      n)
         return
         ;;
       *)
@@ -82,14 +74,14 @@ install_theme() {
     
 if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                  INSTALLASI THEMA               ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "                                                                   "
-  bash <(curl -s https://raw.githubusercontent.com/thomz-store/instal-panel-thomvelz/main/repair.sh)
-
-
-  admin
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) $Domain true admin@gmail.com admin admin admin admin true
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
@@ -97,7 +89,7 @@ if [ "$INSTAL_THOMZ" -eq 1 ]; then
   echo -e ""
   sleep 2
   clear
-  return
+  bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh)
 
 elif [ "$INSTAL_THOMZ" -eq 2 ]; then
   echo -e "                                                       "
