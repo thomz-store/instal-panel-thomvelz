@@ -62,8 +62,6 @@ install_theme() {
   echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
-    read Domain
-    
 bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
