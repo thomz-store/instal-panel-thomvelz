@@ -34,7 +34,7 @@ check_token() {
   echo -e "${RED}TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "thomvelz" ]; then
+  if [ "$USER_TOKEN" = "thomzganteng" ]; then
     echo -e "${GREEN}WOKEH COMPLETE${NC}}"
   else
     echo -e "${GREEN}GAGAL COBA LAGI${NC}"
@@ -62,7 +62,7 @@ install_theme() {
   echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
-bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
+
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
