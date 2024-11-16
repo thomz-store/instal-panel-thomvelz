@@ -62,7 +62,8 @@ install_theme() {
   echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
-
+read Domain
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh) #Domain true admin@gmail.com thomz ganteng admin thomz true
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
