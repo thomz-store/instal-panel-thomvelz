@@ -10,12 +10,12 @@ NC='\033[0m'
 # Display welcome message
 display_welcome() {
   echo -e ""
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                                                 ${NC}"
-  echo -e "${BLUE}                AUTO INSTALLER PANEL             ${NC}"
-  echo -e "${BLUE}                  MUDAH BY THOMZ                 ${NC}"
-  echo -e "${BLUE}                                                 ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}                                                 ${NC}"
+  echo -e "${RED}                AUTO INSTALLER PANEL             ${NC}"
+  echo -e "${RED}                  MUDAH BY THOMZ                 ${NC}"
+  echo -e "${RED}                                                 ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
   echo -e ""
   echo -e ""
   sleep 4
@@ -24,11 +24,11 @@ display_welcome() {
 #Check user token
 check_token() {
   echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                CEK TOKEN BY THOMZ               ${NC}"
-  echo -e "${BLUE}                  TOKEN ADA DI                   ${NC}"
-  echo -e "${BLUE}                     SALURAN                     ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              CEK TOKEN AUTO INSTAL              ${NC}"
+  echo -e "${RED}                  DI SALURANNYA                  ${NC}"
+  echo -e "${RED}                      THOMZ                      ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
   echo -e "                                                       "
 
   echo -e "${RED}TOKEN :${NC}"
@@ -48,9 +48,9 @@ check_token() {
 install_theme() {
   while true; do
     echo -e "                                                       "
-    echo -e "${BLUE} =============================================== ${NC}"
-    echo -e "${BLUE}            APAKAH INGIN MELANJUTKAN             ${NC}"
-    echo -e "${BLUE} =============================================== ${NC}"
+    echo -e "${RED} =============================================== ${NC}"
+    echo -e "${RED}            APAKAH INGIN MELANJUTKAN             ${NC}"
+    echo -e "${RED} =============================================== ${NC}"
     echo -e "                                                       "
     echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
     read -r INSTAL_THOMZ
@@ -63,7 +63,7 @@ install_theme() {
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
 read Domain
-bash <(curl -s https://raw.githubusercontent.com/thomz-store/installer-panel-thomz/main/installer.sh) $Domain true admin@gmail.com thomz ganteng admin thomz true
+bash <(curl -s https://raw.githubusercontent.com/rafiadrian1/kuliah/main/autoinstall.sh)  $Domain true admin@gmail.com thomz ganteng admin thomz true
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
@@ -106,9 +106,9 @@ check_token
 while true; do
   clear
   echo -e "                                                       "
-  echo -e "${BLUE} =============================================== ${NC}"
-  echo -e "${BLUE}                   SELECT OPTION                 ${NC}"
-  echo -e "${BLUE} =============================================== ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}                   SELECT OPTION                 ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
   echo -e "                                                       "
   echo -e "SELECT OPTION :"
   echo "1. Install panel"
