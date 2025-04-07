@@ -64,7 +64,14 @@ install_theme() {
 read Domain <<EOF
 bash <(curl -s https://raw.githubusercontent.com/rafiadrian1/kuliah/main/autoinstall.sh)  $Domain true admin@gmail.com thomz ganteng admin thomz true
 EOF
-# Ubah ke direktori pterodactyl
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+
+  # Ubah ke direktori pterodactyl
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
 # Membuat lokasi baru
@@ -100,12 +107,6 @@ EOF
   echo -e "                                                       "
   sleep 2
   clear
-  echo -e "                                                       "
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e ""
-  sleep 2
     break
         ;;
       Y) 
