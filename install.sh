@@ -61,17 +61,56 @@ install_theme() {
   echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
-read Domain <<EOF
+read Domain 
 bash <(curl -s https://raw.githubusercontent.com/rafiadrian1/kuliah/main/autoinstall.sh)  $Domain true admin@gmail.com thomz ganteng admin thomz true
-EOF
+
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e ""
   sleep 2
+    break
+        ;;
+      Y) 
+     echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+    break
+        ;;
+      n)
+        return
+        ;;
+      *)
+        echo -e "${RED}Pilihan tidak valid, silahkan coba lagi.${NC}"
+        ;;
+    esac
+  done
+  }
+create_node() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                    CREATE NODE                     [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  #!/bin/bash
+#!/bin/bash
 
-  # Ubah ke direktori pterodactyl
+# Minta input dari pengguna
+read -p "Input Domain Yang Sebelumnya: " domain
+
+# Ubah ke direktori pterodactyl
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
 # Membuat lokasi baru
@@ -107,35 +146,17 @@ EOF
   echo -e "                                                       "
   sleep 2
   clear
-    break
-        ;;
-      Y) 
-     echo -e "                                                       "
-  echo -e "${RED} =============================================== ${NC}"
-  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
-  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
-  echo -e "${RED}                    ©Thomvelz                    ${NC}"
-  echo -e "${RED} =============================================== ${NC}"
-    read Domain
-    
-  echo -e "                                                       "
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
-  echo -e "${GREEN} =============================================== ${NC}"
-  echo -e ""
-  sleep 2
-    break
-        ;;
-      n)
-        return
-        ;;
-      *)
-        echo -e "${RED}Pilihan tidak valid, silahkan coba lagi.${NC}"
-        ;;
-    esac
-  done
-  }
+EOF
 
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
+  exit 0
+}
 # Main script
 display_welcome
 check_token
