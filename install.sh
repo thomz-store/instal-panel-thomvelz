@@ -43,7 +43,56 @@ check_token() {
   clear
 }
 
+create_node() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                    CREATE NODE                     [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  #!/bin/bash
+#!/bin/bash
 
+# Minta input dari pengguna
+read -p "Input Domain Panel Yang Tadi Sudah Terinstak: " location_name
+
+# Ubah ke direktori pterodactyl
+cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
+
+# Membuat lokasi baru
+php artisan p:location:make <<EOF
+Thomvelz
+Autoinstaller Thomvelz
+EOF
+
+# Membuat node baru
+php artisan p:node:make <<EOF
+NODE JS
+Autoinstaller By Thomz
+1
+https
+$domain
+yes
+no
+no
+160000000
+0
+160000000
+0
+100
+8080
+2022
+/var/lib/pterodactyl/volumes
+EOF
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
+  exit 0
+}
 # Install theme
 install_theme() {
   while true; do
@@ -62,8 +111,45 @@ install_theme() {
   echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
   echo -e "${RED}                    ©Thomvelz                    ${NC}"
   echo -e "${RED} =============================================== ${NC}"
-read Domain
+read Domain <<EOF
 bash <(curl -s https://raw.githubusercontent.com/rafiadrian1/kuliah/main/autoinstall.sh)  $Domain true admin@gmail.com thomz ganteng admin thomz true
+EOF
+# Ubah ke direktori pterodactyl
+cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
+
+# Membuat lokasi baru
+php artisan p:location:make <<EOF
+Thomvelz
+Autoinstaller Thomvelz
+EOF
+
+# Membuat node baru
+php artisan p:node:make <<EOF
+NODE JS
+Autoinstaller By Thomz
+1
+https
+$Domain
+yes
+no
+no
+160000000
+0
+160000000
+0
+100
+8080
+2022
+/var/lib/pterodactyl/volumes
+EOF
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]        CREATE NODE & LOCATION SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
   echo -e "                                                       "
   echo -e "${GREEN} =============================================== ${NC}"
   echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
@@ -112,6 +198,7 @@ while true; do
   echo -e "                                                       "
   echo -e "SELECT OPTION :"
   echo "1. Install panel"
+  echo "2. Create Node"
   echo "x. Exit"
   echo -e "Masukkan pilihan (1/x):"
   read -r MENU_CHOICE
@@ -122,7 +209,7 @@ while true; do
       install_theme
       ;;
     2)
-      uninstall_theme
+      create_node
       ;;
     x)
       echo "Keluar dari skrip."
