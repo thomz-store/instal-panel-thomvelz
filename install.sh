@@ -1,82 +1,135 @@
-IyEvYmluL2Jhc2gKCiMgQ29sb3IKQkxVRT0nXDAzM1swOzM0bScgICAgICAgClJFRD0nXDAzM1sw
-OzMxbScKR1JFRU49J1wwMzNbMDszMm0nCllFTExPVz0nXDAzM1swOzMzbScKTkM9J1wwMzNbMG0n
-CgojIERpc3BsYXkgd2VsY29tZSBtZXNzYWdlCmRpc3BsYXlfd2VsY29tZSgpIHsKICBlY2hvIC1l
-ICIiCiAgZWNobyAtZSAiJHtSRUR9ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09ICR7TkN9IgogIGVjaG8gLWUgIiR7UkVEfSAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAke05DfSIKICBlY2hvIC1lICIke1JFRH0gICAg
-ICAgICAgICAgICAgQVVUTyBJTlNUQUxMRVIgUEFORUwgICAgICAgICAgICAgJHtOQ30iCiAgZWNo
-byAtZSAiJHtSRUR9ICAgICAgICAgICAgICAgICAgTVVEQUggQlkgVEhPTVogICAgICAgICAgICAg
-ICAgICR7TkN9IgogIGVjaG8gLWUgIiR7UkVEfSAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAke05DfSIKICBlY2hvIC1lICIke1JFRH0gPT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gJHtOQ30iCiAgZWNobyAtZSAiIgog
-IGVjaG8gLWUgIiIKICBzbGVlcCA0Cn0KCiNDaGVjayB1c2VyIHRva2VuCmNoZWNrX3Rva2VuKCkg
-ewogIGVjaG8gLWUgIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAiCiAgZWNobyAtZSAiJHtSRUR9ID09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09ICR7TkN9IgogIGVjaG8gLWUgIiR7UkVEfSAgICAgICAgICAg
-ICAgQ0VLIFRPS0VOIEFVVE8gSU5TVEFMICAgICAgICAgICAgICAke05DfSIKICBlY2hvIC1lICIk
-e1JFRH0gICAgICAgICAgICAgICAgICBESSBTQUxVUkFOTllBICAgICAgICAgICAgICAgICAgJHtO
-Q30iCiAgZWNobyAtZSAiJHtSRUR9ICAgICAgICAgICAgICAgICAgICAgIFRIT01aICAgICAgICAg
-ICAgICAgICAgICAgICR7TkN9IgogIGVjaG8gLWUgIiR7UkVEfSA9PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAke05DfSIKICBlY2hvIC1lICIgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIgoKICBlY2hvIC1l
-ICIke1JFRH1UT0tFTiA6JHtOQ30iCiAgcmVhZCAtciBVU0VSX1RPS0VOCgogIGlmIFsgIiRVU0VS
-X1RPS0VOIiA9ICJ0aG9temdhbnRlbmciIF07IHRoZW4KICAgIGVjaG8gLWUgIiR7R1JFRU59V09L
-RUggQ09NUExFVEUke05DfX0iCiAgZWxzZQogICAgZWNobyAtZSAiJHtHUkVFTn1HQUdBTCBDT0JB
-IExBR0kke05DfSIKICAgIGV4aXQgMQogIGZpCiAgY2xlYXIKfQoKCiMgSW5zdGFsbCB0aGVtZQpp
-bnN0YWxsX3RoZW1lKCkgewogIHdoaWxlIHRydWU7IGRvCiAgICBlY2hvIC1lICIgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIgogICAgZWNobyAt
-ZSAiJHtSRUR9ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-ICR7TkN9IgogICAgZWNobyAtZSAiJHtSRUR9ICAgICAgICAgICAgQVBBS0FIIElOR0lOIE1FTEFO
-SlVUS0FOICAgICAgICAgICAgICR7TkN9IgogICAgZWNobyAtZSAiJHtSRUR9ID09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICR7TkN9IgogICAgZWNobyAtZSAi
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICIK
-ICAgIGVjaG8gLWUgIkluZ2luIG1lbGFuanV0a2FuIGtlIHByb3NlcyBwZW5naW5zdGFsYW4/ICh5
-L24pIgogICAgcmVhZCAtciBJTlNUQUxfVEhPTVoKICAgIGNhc2UgIiRJTlNUQUxfVEhPTVoiIGlu
-CiAgICAgIHkpIAogICAgIGVjaG8gLWUgIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAiCiAgZWNobyAtZSAiJHtSRUR9ID09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICR7TkN9IgogIGVjaG8gLWUgIiR7UkVE
-fSAgICAgICAgICAgICAgTUFTVUtBTiBTVUJET01BSU4gS0FNVSAgICAgICAgICAgICAke05DfSIK
-ICBlY2hvIC1lICIke1JFRH0gICAgICAgICAgICAgKHBhbmVsLnRob212ZWx6LnRhbXZhbikgICAg
-ICAgICAgICAgJHtOQ30iCiAgZWNobyAtZSAiJHtSRUR9ICAgICAgICAgICAgICAgICAgICDCqVRo
-b212ZWx6ICAgICAgICAgICAgICAgICAgICAke05DfSIKICBlY2hvIC1lICIke1JFRH0gPT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gJHtOQ30iCnJlYWQgRG9t
-YWluCmJhc2ggPChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9yYWZp
-YWRyaWFuMS9rdWxpYWgvbWFpbi9hdXRvaW5zdGFsbC5zaCkgICREb21haW4gdHJ1ZSBhZG1pbkBn
-bWFpbC5jb20gdGhvbXogZ2FudGVuZyBhZG1pbiB0aG9teiB0cnVlCiAgZWNobyAtZSAiICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICIKICBlY2hv
-IC1lICIke0dSRUVOfSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PSAke05DfSIKICBlY2hvIC1lICIke0dSRUVOfSAgICAgICAgICAgICAgICAgICBJTlNUQUxM
-IFNVQ0NFU1MgICAgICAgICAgICAgICAke05DfSIKICBlY2hvIC1lICIke0dSRUVOfSA9PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAke05DfSIKICBlY2hvIC1l
-ICIiCiAgc2xlZXAgMgogICAgYnJlYWsKICAgICAgICA7OwogICAgICBZKSAKICAgICBlY2hvIC1l
-ICIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-IgogIGVjaG8gLWUgIiR7UkVEfSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PSAke05DfSIKICBlY2hvIC1lICIke1JFRH0gICAgICAgICAgICAgIE1BU1VLQU4g
-U1VCRE9NQUlOIEtBTVUgICAgICAgICAgICAgJHtOQ30iCiAgZWNobyAtZSAiJHtSRUR9ICAgICAg
-ICAgICAgIChwYW5lbC50aG9tdmVsei50YW12YW4pICAgICAgICAgICAgICR7TkN9IgogIGVjaG8g
-LWUgIiR7UkVEfSAgICAgICAgICAgICAgICAgICAgwqlUaG9tdmVseiAgICAgICAgICAgICAgICAg
-ICAgJHtOQ30iCiAgZWNobyAtZSAiJHtSRUR9ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09ICR7TkN9IgogICAgcmVhZCBEb21haW4KICAgIAogIGVjaG8gLWUg
-IiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAi
-CiAgZWNobyAtZSAiJHtHUkVFTn0gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT0gJHtOQ30iCiAgZWNobyAtZSAiJHtHUkVFTn0gICAgICAgICAgICAgICAgICAg
-SU5TVEFMTCBTVUNDRVNTICAgICAgICAgICAgICAgJHtOQ30iCiAgZWNobyAtZSAiJHtHUkVFTn0g
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gJHtOQ30iCiAg
-ZWNobyAtZSAiIgogIHNsZWVwIDIKICAgIGJyZWFrCiAgICAgICAgOzsKICAgICAgbikKICAgICAg
-ICByZXR1cm4KICAgICAgICA7OwogICAgICAqKQogICAgICAgIGVjaG8gLWUgIiR7UkVEfVBpbGlo
-YW4gdGlkYWsgdmFsaWQsIHNpbGFoa2FuIGNvYmEgbGFnaS4ke05DfSIKICAgICAgICA7OwogICAg
-ZXNhYwogIGRvbmUKICB9CgojIE1haW4gc2NyaXB0CmRpc3BsYXlfd2VsY29tZQpjaGVja190b2tl
-bgoKd2hpbGUgdHJ1ZTsgZG8KICBjbGVhcgogIGVjaG8gLWUgIiAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiCiAgZWNobyAtZSAiJHtSRUR9ID09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICR7TkN9IgogIGVj
-aG8gLWUgIiR7UkVEfSAgICAgICAgICAgICAgICAgICBTRUxFQ1QgT1BUSU9OICAgICAgICAgICAg
-ICAgICAke05DfSIKICBlY2hvIC1lICIke1JFRH0gPT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT0gJHtOQ30iCiAgZWNobyAtZSAiICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICIKICBlY2hvIC1lICJTRUxFQ1Qg
-T1BUSU9OIDoiCiAgZWNobyAiMS4gSW5zdGFsbCBwYW5lbCIKICBlY2hvICJ4LiBFeGl0IgogIGVj
-aG8gLWUgIk1hc3Vra2FuIHBpbGloYW4gKDEveCk6IgogIHJlYWQgLXIgTUVOVV9DSE9JQ0UKICBj
-bGVhcgoKICBjYXNlICIkTUVOVV9DSE9JQ0UiIGluCiAgICAxKQogICAgICBpbnN0YWxsX3RoZW1l
-CiAgICAgIDs7CiAgICAyKQogICAgICB1bmluc3RhbGxfdGhlbWUKICAgICAgOzsKICAgIHgpCiAg
-ICAgIGVjaG8gIktlbHVhciBkYXJpIHNrcmlwLiIKICAgICAgZXhpdCAwCiAgICAgIDs7CiAgICAq
-KQogICAgICBlY2hvICJQaWxpaGFuIHRpZGFrIHZhbGlkLCBzaWxhaGthbiBjb2JhIGxhZ2kuIgog
-ICAgICA7OwogIGVzYWMKZG9uZQo=
+#!/bin/bash
+
+# Color
+BLUE='\033[0;34m'       
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+# Display welcome message
+display_welcome() {
+  echo -e ""
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}                                                 ${NC}"
+  echo -e "${RED}                AUTO INSTALLER PANEL             ${NC}"
+  echo -e "${RED}                  MUDAH BY THOMZ                 ${NC}"
+  echo -e "${RED}                                                 ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e ""
+  echo -e ""
+  sleep 4
+}
+
+#Check user token
+check_token() {
+  echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              CEK TOKEN AUTO INSTAL              ${NC}"
+  echo -e "${RED}                  DI SALURANNYA                  ${NC}"
+  echo -e "${RED}                      THOMZ                      ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "                                                       "
+
+  echo -e "${RED}TOKEN :${NC}"
+  read -r USER_TOKEN
+
+  if [ "$USER_TOKEN" = "thomzganteng" ]; then
+    echo -e "${GREEN}WOKEH COMPLETE${NC}}"
+  else
+    echo -e "${GREEN}GAGAL COBA LAGI${NC}"
+    exit 1
+  fi
+  clear
+}
+
+
+# Install theme
+install_theme() {
+  while true; do
+    echo -e "                                                       "
+    echo -e "${RED} =============================================== ${NC}"
+    echo -e "${RED}            APAKAH INGIN MELANJUTKAN             ${NC}"
+    echo -e "${RED} =============================================== ${NC}"
+    echo -e "                                                       "
+    echo -e "Ingin melanjutkan ke proses penginstalan? (y/n)"
+    read -r INSTAL_THOMZ
+    case "$INSTAL_THOMZ" in
+      y) 
+     echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+read Domain
+bash <(curl -s https://raw.githubusercontent.com/rafiadrian1/kuliah/main/autoinstall.sh)  $Domain true admin@gmail.com thomz ganteng admin thomz true
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+    break
+        ;;
+      Y) 
+     echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}              MASUKAN SUBDOMAIN KAMU             ${NC}"
+  echo -e "${RED}             (panel.thomvelz.tamvan)             ${NC}"
+  echo -e "${RED}                    ©Thomvelz                    ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+    read Domain
+    
+  echo -e "                                                       "
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e "${GREEN}                   INSTALL SUCCESS               ${NC}"
+  echo -e "${GREEN} =============================================== ${NC}"
+  echo -e ""
+  sleep 2
+    break
+        ;;
+      n)
+        return
+        ;;
+      *)
+        echo -e "${RED}Pilihan tidak valid, silahkan coba lagi.${NC}"
+        ;;
+    esac
+  done
+  }
+
+# Main script
+display_welcome
+check_token
+
+while true; do
+  clear
+  echo -e "                                                       "
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "${RED}                   SELECT OPTION                 ${NC}"
+  echo -e "${RED} =============================================== ${NC}"
+  echo -e "                                                       "
+  echo -e "SELECT OPTION :"
+  echo "1. Install panel"
+  echo "x. Exit"
+  echo -e "Masukkan pilihan (1/x):"
+  read -r MENU_CHOICE
+  clear
+
+  case "$MENU_CHOICE" in
+    1)
+      install_theme
+      ;;
+    2)
+      uninstall_theme
+      ;;
+    x)
+      echo "Keluar dari skrip."
+      exit 0
+      ;;
+    *)
+      echo "Pilihan tidak valid, silahkan coba lagi."
+      ;;
+  esac
+done
