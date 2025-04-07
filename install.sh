@@ -34,7 +34,7 @@ check_token() {
   echo -e "${RED}TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "thomzganteng" ]; then
+  if [ "$USER_TOKEN" = "Thomvelz" ]; then
     echo -e "${GREEN}WOKEH COMPLETE${NC}}"
   else
     echo -e "${GREEN}GAGAL COBA LAGI${NC}"
