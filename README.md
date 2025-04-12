@@ -1,6 +1,6 @@
 
 
-## AUTO INSTALLER SCRIPT
+## AUTO INSTALLER SCRIPT BY THOMZ
 
 Gunakan script di bawah untuk menginstall thema dengan sekali copy paste saja.
 
@@ -13,4 +13,4 @@ bash <(curl -s https://raw.githubusercontent.com/thomz-store/instal-panel-thomve
 - install panel
 - instal wings
 
-## TENGKYU ✨
+## Jangan lupa kasih copyright
