@@ -164,15 +164,16 @@ check_token
 while true; do
   clear
   echo -e "                                                       "
-  echo -e "${RED} =============================================== ${NC}"
-  echo -e "${RED}                   SELECT OPTION                 ${NC}"
-  echo -e "${RED} =============================================== ${NC}"
+  echo "${RED}Project By Thomz @ v2${NC}"
+  echo "${RED}Copyright 2025, thomvelz${NC}"
+  echo "${RED}Youtube : thomvelz${NC}"
+  echo "${RED}WA 1 : 6283834510927${NC}"
   echo -e "                                                       "
   echo -e "SELECT OPTION :"
   echo "1. Install panel"
   echo "2. Create Node"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (1/x):"
+  echo -e "Silahkan pilih menu di atas:"
   read -r MENU_CHOICE
   clear
 
